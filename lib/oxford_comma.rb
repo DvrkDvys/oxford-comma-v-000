@@ -13,7 +13,7 @@ def oxford_comma(array)
     new = new.join
     oxford = oxford_array.concat new
       if oxford.split(' ').size <= 3
-         oxford = oxford.gsub(/\W/, ' ')
+         oxford = oxford.gsub(/[\s,]/ ,"")
       return oxford
     else
     return oxford
