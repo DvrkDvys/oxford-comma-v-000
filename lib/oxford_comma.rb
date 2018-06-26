@@ -13,7 +13,7 @@ def oxford_comma(array)
     new = new.join
     # oxford = oxford_array.push("#{new}")
     oxford = oxford_array.concat new
-    bind
+    
       if oxford.length <= 4
          remove_index = oxford.length - 3
          oxford = oxford.remove(array[remove_indexve])
