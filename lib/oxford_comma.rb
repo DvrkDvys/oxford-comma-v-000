@@ -11,10 +11,9 @@ def oxford_comma(array)
     new = [", and "]
     new = new.push("#{array[index]}")
     new = new.join
-    # oxford = oxford_array.push("#{new}")
     oxford = oxford_array.concat new
     binding.pry
-      if oxford.length <= 4
+      if oxford.split(' ').size <= 3
          remove_index = oxford.length - 3
          oxford = oxford.remove(array[remove_indexve])
       return oxford
