@@ -8,7 +8,7 @@ def oxford_comma(array)
     index = length - 1
     oxford_array = array.first(length - 1)
     oxford_array = oxford_array.join(", ")
-    new = [", and "]
+    new = [" and "]
     new = new.push("#{array[index]}")
     new = new.join
     # oxford = oxford_array.push("#{new}")
