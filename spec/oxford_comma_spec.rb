@@ -1,7 +1,7 @@
 describe "#oxford_comma" do
-  # it 'returns a string without any additional fomatting when given a 1-element array' do
-  #   expect(oxford_comma(["kiwi"])).to eq("kiwi")
-  # end
+  it 'returns a string without any additional fomatting when given a 1-element array' do
+    expect(oxford_comma(["kiwi"])).to eq("kiwi")
+  end
   it "adds 'and' between elements when given a 2-element array" do
     expect(oxford_comma(["kiwi", "durian"])).to eq("kiwi and durian")
   end
